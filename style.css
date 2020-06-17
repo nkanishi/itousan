@@ -1,0 +1,131 @@
+@charset "UTF-8"
+/*すべてのページ */
+body{
+  background-color: #eeece9;
+}
+h2{
+  font-size: 35px;
+  border-bottom: 1px dotted #3f5170;
+  margin-top: 60px;
+  margin-right: 0px;
+  margin-bottom: 60px;
+  margin-left: 0px;
+}
+html{
+  font-family: sans-serif;
+}
+html *{
+  box-sizing: border-box;
+}
+p{
+  line-height: 2;
+}
+a:hover{
+  color:green;
+}
+a:link{
+  color:black;
+}
+a:visited{
+  color:black;
+}
+.nav li{
+  line-height: 2;
+  list-style-type:none;
+}
+.map{
+  margin: 40px 0 40px 0;
+}
+.footer{
+  line-height: 500;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.menu-item{
+  display: flex;
+}
+h3{
+  font-size: 30px;
+}
+.menu-lunch{
+  margin-right: 200px;
+}
+.keyvisual{
+  background-image: url("../images/420200519115932334104.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:auto;
+  height: 800px;
+  color: white;
+}
+.imgkanban{
+  background-image: url("../images/ayu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:auto;
+  height: 800px;
+  color: white;
+
+}
+.wrapper{
+  text-align: center;
+}
+.txt{
+  display: inline-block;
+  text-align: left;
+}
+.header{
+  display: inline-block;
+  text-align: left;
+}
+.imgayu{
+  background-image: url("../images/ayu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:auto;
+  height: 800px;
+  color: white;
+}
+.imgzaseki{
+  background-image: url("../images/ryouri.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:auto;
+  height: 800px;
+  color: white;
+}
+.imgryouri{
+  background-image: url("../images/ryouri.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:auto;
+  height: 800px;
+  color: white;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* スマホ向け */
+@media(max-width: 767px){
+  .map{
+    width: 100%;
+  }
+.keyvisual{
+  background-size:contain;
+}
+.imgkanban{
+  background-size:contain;
+}
+.imgayu{
+  background-size:contain;
+}
+.imgzaseki{
+  background-size:contain;
+}
+.imgryouri{
+  background-size:contain;
+}
+}
