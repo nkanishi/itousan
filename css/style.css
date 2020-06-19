@@ -1,0 +1,158 @@
+@charset "UTF-8"
+/*すべてのページ */
+body{
+  background-color: #eeece9;
+  margin: 0;
+}
+html{
+  font-family: serif;
+  font-size: 20px;
+  line-height: 50px;
+}
+html *{
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.nav li{
+  list-style: none;
+  margin-left: 400px;
+}
+
+.headertop{
+  background-image: url("../images/420200519115932334104.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height: 900px;
+  color:white;
+  font-size: 40px;
+  position: relative;
+}
+.headerlogo{
+  position:absolute;
+  top:15%;
+  left:10%;
+}
+.sitetitle{
+  position: absolute;
+  top:40%
+  left:20%;
+}
+.news{
+  text-align: left;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 150px;
+}
+.newscontents{
+  border-top:1px solid #CCC;
+  border-bottom:1px solid #CCC;
+}
+.matsunews{
+  text-align: left;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 150px;
+}
+.matsunewstitle{
+  border-bottom: 1px solid #CCC;
+}
+.matsunewstop{
+  background-image: url("../images/kanban.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:auto;
+  height: 600px;
+  margin-bottom: 50px
+}
+.menutop{
+  background-image: url("../images/ayu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width:100%;
+  height: 600px;
+  margin-bottom: 50px
+}
+.menunews{
+  text-align: left;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 150px;
+}
+.menutitle{
+  border-bottom: 1px solid #CCC;
+}
+.shoptop{
+  background-image: url("../images/zaseki.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:auto;
+  height: 600px;
+  margin-bottom: 50px
+}
+.shopnews{
+  text-align: left;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 150px;
+}
+.shopnewstitle{
+  border-bottom: 1px solid #CCC;
+}
+.jobtop{
+  background-image: url("../images/420200519115932334104.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width:auto;
+  height: 600px;
+  margin-bottom: 50px;
+}
+.jobnews{
+  text-align: left;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 150px;
+}
+.jobtitle{
+  border-bottom: 1px solid #CCC;
+}
+.job-tel{
+  text-align: right;
+  margin-right: 200px;
+}
+
+footer{
+  line-height: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+.wrapper{
+  width: 100%;
+  margin: 0 auto;
+
+}
+/* スマホ向け */
+@media(max-width: 767px){
+  .map{
+    width: 100%;
+    box-sizing: border-box;
+  }
+ .headertop{
+   background-size: contain;
+   width:100%;
+  }
+  .matsunewstop{
+  background-size: contain;
+}
+.menutop{
+  background-size: contain;
+}
+.wrapper{
+  background-size: contain;
+  width:100%;
+}
+}
