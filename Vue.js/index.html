@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+
+
+<div id="add">
+    
+</div>
+
+<html lang = "ja">
+ <head>
+ <meta charset ="UTF-8">
+ <title>My VUe APP</title>
+ <link rel="stylesheet" href = "css/styless.css">
+</head>
+<body>
+    <div id="app" class="container">
+        <h1>My Todos</h1>
+      <ul>
+          <li v-for="todo in todos">{{todo}}</li>
+      </ul>
+      <form v-on:submit="addItem">
+          <input type="text" v-model="newItem">
+          <input type="submit" value="add">
+      </form>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
