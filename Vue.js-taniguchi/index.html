@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+
+
+<div id="add">
+    
+</div>
+
+<html lang = "ja">
+ <head>
+ <meta charset ="UTF-8">
+ <title>My2 VUe APP</title>
+ <link rel="stylesheet" href = "css/styless.css">
+</head>
+<body>
+    <div id="app">
+    <button v-on:click="shuffle">シャッフル</button>
+     <transition-group name ="flip-list" tag ="ul">
+       <li v-for="pref in prefs" v-bind:key="pref.name">
+           {{pref.name}}
+      </li>
+     </transition-group>
+     
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <sprict src="https://cdn.jsdelivr.net/npm/lodash@4.17.19/lodash.min.js"></sprict>
+    <script src="js/main.js"></script>
+</body>
+</html>
