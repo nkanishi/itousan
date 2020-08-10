@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang = "ja">
+ <head>
+ <meta charset ="UTF-8">
+ <title>VUe tab</title>
+
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+ <link rel="stylesheet" href = "css/styless.css">
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container" id="app">
+    <h1>タブ</h1>
+    <ul class="tab">
+      <li class="tab-item" v-for="(item, key) in items" :key="key" :class="{ active: active === key }">
+        <a href="#" @click.prevent="activate(key)">{{ item }}</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <component class="tab-pane" :is="activeTabComponent"></component>
+    </div>
+  </div>
+  
+  
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
