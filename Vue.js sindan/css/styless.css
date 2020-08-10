@@ -1,0 +1,76 @@
+.container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .answerList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  .answerList.start li {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .answerList li {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+  }
+
+  .answerList li a {
+    display: block;
+    padding: 20px;
+    border-radius: 4px;
+    background: #ff8c00;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  /* フェードイン */
+  .fade-enter-active {
+    transition: opacity 1s;
+  }
+
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
+
+  /* スライドアニメーションを適用する場合は以下のコメントアウトを外してください */
+  /* .fade-enter-active {
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 0.8s ease;
+  }
+  .fade-leave-active {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 0.8s ease;
+    opacity: 0;
+  }
+  .fade-enter {
+    transform: translateX(-100%);
+  }
+  .fade-leave-to {
+    transform: translateX(100%);
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
