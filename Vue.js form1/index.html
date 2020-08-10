@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "ja">
+ <head>
+ <meta charset ="UTF-8">
+ <title>VUe taniguchi</title>
+ <link rel="stylesheet" href = "css/styless.css">
+</head>
+<body>
+  <div class="container" id="app">
+    <main class="main">
+      <section class="block">
+          <h1 class="block-title">お問い合わせ</h1>
+          <div class="block-body">
+            <form action="" class="form">
+            <fieldset>
+              <div class="form-group">
+                <label for="name">お名前<span class="badge">10文字</span></label>
+                <p class="errors" v-for="error in errors.name">{{error}}</p>
+                <input type="text" name="name" id="name" v-model="name" v-on:input="validator('name', 10)">
+              </div>
+              <div class="form-group">
+                <label for="subject">件名<span class="badge">20文字</span></label>
+                <p class="errors" v-for="error in errors.subject" v-if="error.length > 0">{{error}}</p>
+                <input type="text" name="subject" id="subject" v-model="subject" v-on:input="validator('subject', 20)">
+              </div>
+              <div class="form-group">
+                <label for="contents">内容<span class="badge">30文字</span></label>
+                <p class="errors" v-for="error in errors.contents" v-if="error.length > 0">{{error}}</p>
+                <div class="form-row">
+                  <textarea type="text" name="contents" id="contents" v-model="contents" v-on:input="validator('contents', 30)"></textarea>
+                </div>
+              </div>
+              <p>
+                <input class="button" type="submit" value="送信する">
+              </p>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
