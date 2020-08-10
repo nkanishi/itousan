@@ -1,0 +1,54 @@
+th > div.sorted.desc::after {
+    display: inline-block;
+    content: '▼';
+}
+th > div.sorted.asc::after {
+    display: inline-block;
+    content: '▲';
+}
+th > div {
+  cursor: pointer;
+}
+.search label {
+  display: inline-block;
+  margin-right: 1em;
+}
+.search input[type="text"],
+.search select{
+  width: 20em;
+}
+.color {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-right: 2px;
+}
+#red + label {
+  color: red;
+}
+#orange + label {
+  color: orange;
+}
+#purple + label {
+  color: purple;
+}
+#yellow + label {
+  color: yellow;
+}
+#green + label {
+  color: green;
+}
+#pink + label {
+  color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang = "ja">
+ <head>
+ <meta charset ="UTF-8">
+ <title>VUe sortfilter</title>
+ <link rel="stylesheet" href = "css/styless.css">
+</head>
+<body>
+
+  <div class="container" id="app">
+    <main class="main">
+      <section class="block">
+        <h1 class="block-title">商品一覧</h1>
+        <div class="block-body">
+          <div>
+            <section class="search">
+              <label>商品名</label>
+              <input type="text" v-model="filter.name" />
+              <br />
+              <label>価格</label>
+              <input type="checkbox" id="under" value="under" v-model="filter.price">
+              <label for="under">200円未満</label>
+              <input type="checkbox" id="over" value="over" v-model="filter.price">
+              <label for="over">200円以上</label>
+              <br />
+              <label>色</label>
+              <input type="checkbox" id="red" value="red" v-model="filter.color">
+              <label for="red">赤</label>
+              <input type="checkbox" id="orange" value="orange" v-model="filter.color">
+              <label for="orange">オレンジ</label>
+              <input type="checkbox" id="purple" value="purple" v-model="filter.color">
+              <label for="purple">紫</label>
+              <input type="checkbox" id="yellow" value="yellow" v-model="filter.color">
+              <label for="yellow">黄</label>
+              <input type="checkbox" id="green" value="green" v-model="filter.color">
+              <label for="green">緑</label>
+              <input type="checkbox" id="pink" value="pink" v-model="filter.color">
+              <label for="pink">ピンク</label>
+            </section>
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                    <div v-on:click="sortBy('id')" :class="sortClass('id')">No</div>
+                  </th>
+                  <th>
+                    <div v-on:click="sortBy('name')" :class="sortClass('name')">商品名</div>
+                  </th>
+                  <th>
+                    <div v-on:click="sortBy('price')" :class="sortClass('price')">価格</div>
+                  </th>
+                  <th>
+                    <div v-on:click="sortBy('colorCode')" :class="sortClass('colorCode')">色</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="item in result">
+                  <td>{{item.id}}</td>
+                  <td>{{item.name}}</td>
+                  <td>{{item.price}}</td>
+                  <td>
+                    <div class="color" :style="'background-color:' + item.colorCode"></div>{{item.colorName}}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
