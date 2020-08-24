@@ -1,0 +1,389 @@
+body{
+  margin: 0 auto;
+  background-color: white;
+}
+a{
+  color: #040404;
+  text-decoration: none;
+}
+.mainView{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+
+}
+
+
+
+.hamburger_btn { 
+    position: fixed; /*常に最上部に表示したいので固定*/ 
+     top: 0; 
+     right: 0; 
+     width: 70px; 
+     height: 72px; 
+    cursor: pointer; 
+     z-index: 50; 
+   } 
+   
+   
+   .hamburger_btn .line { 
+     position: absolute; 
+     top: 0; 
+     left: 20px; 
+     width: 32px; 
+     height: 2px; 
+     background: #333333; 
+     text-align: center; 
+   } 
+  
+   
+   .hamburger_btn .line_01 { 
+     top: 16px; 
+     transition: 0.4s ease; 
+   } 
+   .hamburger_btn .line_02 { 
+     top: 26px; 
+     transition: 0.4s ease; 
+   } 
+   .hamburger_btn .line_03 { 
+    top: 36px; 
+     transition: 0.4s ease; 
+   } 
+   
+   
+  
+   
+   .btn_line01 { 
+     transform: translateY(10px) rotate(-45deg); 
+     transition: 0.4s ease; 
+   } 
+   .btn_line02 { 
+     transition: 0.4s ease; 
+     opacity: 0; 
+   } 
+   .btn_line03 { 
+     transform: translateY(-10px) rotate(45deg); 
+    transition: 0.4s ease; 
+  } 
+  
+   
+  
+   
+   /*サイドメニュー*/ 
+  
+   
+   .menu-enter-active, .menu-leave-active { 
+    transition: opacity 0.4s; 
+   } 
+   .menu-enter, .menu-leave-to { 
+     opacity: 0; 
+   } 
+   
+   
+   .menu li { 
+     list-style: none; 
+    line-height: 1; 
+     padding: 1rem; 
+   } 
+   .menu { 
+     background-color: rgba(197, 197, 197, 0.671); 
+     z-index: 30; 
+     padding: 2rem 1rem; 
+     position: fixed; 
+     width: 20rem; 
+     height: 80rem; 
+     top: 0; 
+     right: 0; 
+   } 
+   .menu a { 
+    color: rgb(66, 66, 66); 
+     text-decoration: none; 
+     font-size: 1.2rem; 
+     padding: 0 2rem; 
+   } 
+   .menu ul{ 
+     margin: 1rem; 
+     padding: 0; 
+   } 
+
+   
+/* ここから */
+   html{
+    font-family:serif ;
+    font-size: 20px;
+    background-color: black;
+    
+  }  
+  
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .logo {
+    background-color: white;
+  } 
+  .logo img{
+    width:21%;
+    height:21%;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .tel2{
+    width:25%;
+    height:25%; 
+    display: inline-block; 
+    text-align: right;
+    /* margin-left:20px;   */
+    position: absolute;
+    top:3%;
+    right:20%;
+  }   
+  /* .toppagepc img{
+    width:100%;
+    height: 100%;
+    display: block !important;
+  } */
+  .toppagesm img{
+    width:100%;
+    position: relative;
+    display: block !important;
+  } 
+  
+  
+  footer{
+    line-height: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  
+  main{
+    width: 65%;
+    margin: 0 auto;
+    border: 1px solid #CCC;
+    background-color: white;
+  } 
+  
+  /* 窓屋について */
+  .madoya{
+    text-align: left;
+    /* margin-left: 80px;
+    margin-right: 80px;  */
+    margin: 0 10%;
+    margin-bottom: 10%;
+    line-height: 1.8rem;
+  }
+  .madoyatitle{
+     border-bottom:1px solid #CCC;
+  }
+  
+  /* 店舗情報 */
+  .tenpo{
+   
+    margin-bottom: 150px;
+  }
+  .tenpotitle{
+    border-bottom: 1px solid #CCC;
+    margin: 2% 10%;
+    /* margin-left: 40px; */
+  }
+  .tenpocontents{
+    margin: 0 10%;
+    /* margin-left: 10px;
+    margin-right: 40px; */
+  }
+  .kasuga{
+    display:flex;
+  }
+  .kasuga img{
+    width: 50%;
+    margin-right:10%;
+    /* margin-right:60px; */
+  }
+  .tenpocontents h4{
+    
+    font-size: 18px;
+  }
+  
+  /* 買取査定のお客様へ */
+  .kaitoritop{
+    margin-bottom: 10%;
+  }
+  .kaitorititle{
+    border-bottom: 1px solid #CCC;
+    margin: 2% 10%;
+    /* margin-left: 40px; */
+  }
+  .kaitoriimg{
+    width:100%;
+  }
+  .kaitoricontents{
+    /* margin-left: 80px;
+    margin-right: 80px; */
+    margin: 0 10%;
+    line-height: 1.8rem;
+  }
+  
+  /* 窓屋ギャラリー */
+  .gallerytop{
+    margin-bottom: 10%;
+  }
+  .gallerytitle{
+    border-bottom: 1px solid #CCC;
+    margin: 2% 10%;
+    /* margin-left: 40px; */
+  }
+  .galleryimg{
+    width:100%;
+  }
+  .gallerycontents{
+    /* margin-left: 80px;
+    margin-right: 80px; */
+    margin: 0 10%;
+    line-height: 1.8rem;
+    display:flex;
+  }
+  .gitem{
+    width: 25%;
+    height: 25%;
+    margin: 5% auto;
+  }
+  
+  
+  /* 買取ページ */
+  .kaitori{
+    display:flex;
+   
+  }
+  .kaitori-item{
+    width: 25%;
+    margin: 0 auto;
+    /* margin-left: 30px; */
+  }
+  .kaitori-img{
+    background-color: rgba(147, 222, 236, 0.3);
+    width: 100%;
+    height: 200px;
+  }
+  .ihintitle{
+    border-bottom: 1px solid #CCC;
+    margin: 5% 10%;
+  }
+  .ihin p{
+    margin: 0 10%;
+    line-height: 1.8rem;
+  }
+  .kaitaititle{
+    border-bottom: 1px solid #CCC;
+    margin: 5% 10%;
+  }
+  .kaitai p{
+    margin: 0 10%;
+    line-height: 1.8rem;
+  }
+  
+  
+  /* スマホ向け */
+  @media(max-width: 767px){
+    html{
+      font-family:serif ;
+      font-size: 16px;
+      background-color: black;
+      
+    }  
+    
+    .toppagesm img{
+      width:100%;
+      position: relative;
+      display: block !important;
+    }
+    .logo img{
+      width:41%;
+      height:41%;
+      display: inline-block;
+      margin-top: 2%;
+    }
+    .tel2{
+      width:35%;
+      height:35%; 
+      display: inline-block; 
+      text-align: right;
+      margin-left:20px;  
+      position: absolute;
+      top:3%;
+      right:20%;
+    }   
+    main{
+      width: 98%;
+      margin: 0 auto;
+      border: 1px solid #CCC;
+      background-color: white;
+    } 
+  
+  /* 窓屋について */
+    .madoya{
+      text-align: left;
+      /* margin-left: 20px;
+      margin-right: 20px; 
+      margin-bottom: 50px; */
+    }
+  
+  
+    /* 店舗情報 */
+  .tenpo{
+    margin-bottom: 50px;
+  }
+  .tenpotitle{
+    border-bottom: 1px solid #CCC;
+    /* margin-left: 40px; */
+  }
+  .tenpocontents{
+    /* margin-left: 20px;
+    margin-right: 20px; */
+  }
+  .kasuga{
+    display:block;
+  }
+  .kasuga img{
+    width: 100%;
+    /* margin-right:60px; */
+  }
+  .tenpocontents h4{
+    
+    font-size: 18px;
+  }
+  /* 買取について */
+  .kaitoricontents{
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin-bottom: 20px;
+  }
+  
+  /* 買取ページ */
+  .kaitori{
+    display:block;
+  }
+  .kaitori-img{
+    background-color: rgba(147, 222, 236, 0.3);
+    width: 300%;
+    height: 200px;
+  }
+  .kaitori-item{
+    width: 80%;
+    margin: 5% 10%;
+    /* margin-left: 30px; */
+  }
+  .kaitori-img{
+    background-color: rgba(147, 222, 236, 0.3);
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    vertical-align: middle; 
+  }
+  
+  
+  
+  }
+  
+  
+  
