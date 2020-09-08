@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang = "ja">
+ <head>
+ <meta charset ="UTF-8">
+ <title>窓屋</title>
+ <meta name = "viewport" content = "width = device-width,intial-scale = 1">
+ <link rel="stylesheet" href = "css/styless.css">
+ <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+         <div class="hamburger_btn" v-on:click='ActiveBtn=!ActiveBtn'> 
+           <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span> 
+           <span class="line line_02" v-bind:class="{'btn_line02':ActiveBtn}"></span> 
+           <span class="line line_03" v-bind:class="{'btn_line03':ActiveBtn}"></span>
+
+        </div> 
+       <!--サイドメニュー--> 
+       <transition name="menu"> 
+         <div class="menu" v-show="ActiveBtn"> 
+             <ul> 
+                <li><a href="index.html">トップページ</a></li> 
+                <li><a href="about.html">古美術窓屋について</a></li> 
+                <li><a href="kaitori.html">買取・査定</a></li> 
+                <li><a href="info.html">お問合せ</a></li> 
+               
+                
+             </ul> 
+        </div> 
+      </transition> 
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"> <img src="images/logo.jpg"></a>
+       </div>
+       <div class="tel2"><img src="images/tel5.png"></div>
+    </div>
+       <main>
+        <!-- <img class = "top2" src="images/tophen.jpg"> -->
+        <img src="images/gaikanre.jpg">
+
+        <h3 class="kaitorititle">窓屋の買取・査定</h3>
+        <div class="kaitori2">
+          <div class="item1">
+           <img src="images/kozuchi4.png">
+           <p>骨董品は眠っていませんか？
+           窓屋は無料にて査定を行っています。</p>
+          </div>
+          <div class="item2">
+           <img src="images/kozuchi.kai6.png">
+           <p>日時を決めて、当社からお伺い致します。査定・出張料は無料です。</p>
+           </div>
+           <div class="item3">
+           <img src="images/kozuchi.himi7.png">
+           <p>
+           お客様の情報は一切漏れることは御座いません。ご安心下さい。</p>
+          </div>          
+        </div>
+
+        <div class="nayami">
+          
+            <div class="nayamititle">
+              <h2>◆こんなときは窓屋にご相談下さい</h2>
+            </div>
+            <div class="nayamicontents">
+              <p>◆長年集めていたコレクションを処分したい<br>◆親族が亡くなり、集めたものがたくさんある
+                <br> ◆古い蔵がある<br>◆価値があるかどうか分からない骨董品が色々ある <br> <br> <br></p>
+            </div>
+            <div class="nayamizu">
+              <div class="zu">   <img src="images/ihin2.png"></div>
+              <div class="zu">   <img src="images/isan2.png"></div>
+            </div>
+            <div class="nayamizu">
+              <div class="zu">   <img src="images/kai2.png"></div>
+              <div class="zu">   <img src="images/kore2.png"></div>
+            </div>
+  
+            <div class="nayamititle">
+              <h2>◆買取商品　例</h2>
+            </div>
+            <div class="nayamizu">
+              <div class="zu2"><p>・骨董品</p></div>
+              <div class="zu2"><p>・美術品</p></div>&nbsp
+              <div class="zu2"><p>・茶道具</p></div>&nbsp
+              <div class="zu2"><p>・絵画</p></div>&nbsp
+            </div>
+            <div class="nayamizu">
+              <div class="zu2"><p>・宝石</p></div>
+              <div class="zu2"><p>・書道具</p></div>&nbsp
+              <div class="zu2"><p>・古銭</p></div>&nbsp
+              <div class="zu2"><p>・切手</p></div>&nbsp
+            </div>         
+         </div>
+          
+
+        
+        <h3 class="kaitorititle">買取の流れ</h3>
+        <div class="nagaremain">
+          <h4>◆手順1 &emsp;ご予約</h4>
+          　　　　<div class ="nagare">
+                    <div class="nagare1">
+                      <img src="images/yoyaku.jpg">
+                    </div>
+                    <div class="nagare2">
+                      <p>買取をご希望の場合、出張見積もりなどで外出している場合もございますので、予めお電話でご確認下さい。
+                        お電話にでご予約頂くとご案内もスムーズです。</p>
+                    </div>
+                  </div>
+                  <h4>◆手順2 &emsp;査定</h4>
+          　　　　<div class ="nagare">
+                    <div class="nagare1">
+                      <img src="images/sara.jpg">
+                    </div>
+                    <div class="nagare2">
+                      <p>指定の日時にて当店、またはお客様のご自宅に訪問にて査定致します。鑑定士が親切丁寧に
+                      鑑定致します。 </p>
+                    </div>
+                  </div>
+                  <h4>◆手順3 &emsp;お取引完了</h4>
+          　　　　<div class ="nagare">
+                    <div class="nagare1">
+                      <img src="images/keiyaku.jpg">
+                    </div>
+                    <div class="nagare2">
+                      <p>査定が完了致しましたら、その場で買取金額をお伝え致します。お客様が十分ご納得の上、契約が成立すれば、当日にでも
+                       買取させて頂きます。 </p>
+                    </div>
+                  </div>
+        </div>
+       
+        　
+        
+
+         
+
+         
+       </main>
+       <footer>
+        <h2>古美術 窓屋</h2>
+        <div class="f">
+          <p>有限会社　オカモト</p>
+          <p>春日本店　〒761-0101 香川県高松市春日町1709-8</p>
+          <p>兵庫町店　〒761-0024 香川県高松市兵庫町1-3</p>
+          <p>京都新店　〒761-0101 京都府高松市春日町1709-8</p>
+         </div>
+         <br>
+         <p>&copy;Copyright 古美術　窓屋.ALL right reserved.</P>
+     　</footer>
+   
+     </div>
+        
+      
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

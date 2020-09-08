@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "ja">
+ <head>
+ <meta charset ="UTF-8">
+ <title>料理屋　松</title>
+ <meta name = "viewport" content = "width = device-width,intial-scale = 1">
+ <link rel="stylesheet" href = "css/styless.css">
+ <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+         <div class="hamburger_btn" v-on:click='ActiveBtn=!ActiveBtn'> 
+           <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span> 
+           <span class="line line_02" v-bind:class="{'btn_line02':ActiveBtn}"></span> 
+           <span class="line line_03" v-bind:class="{'btn_line03':ActiveBtn}"></span>
+
+        </div> 
+       <!--サイドメニュー--> 
+       <transition name="menu"> 
+         <div class="menu" v-show="ActiveBtn"> 
+             <ul> 
+                <li><a href="index.html">トップページ</a></li> 
+                <li><a href="about.html">お知らせ</a></li> 
+                <li><a href="kaitori.html">料理屋 松について</a></li> 
+                <li><a href="info.html">お品書き</a></li> 
+                <li><a href="info.html">店舗のご案内</a></li> 
+                <li><a href="info.html">求人情報</a></li> 
+                <br>
+                <li><a href="info.html">087-813-4447</a></li>       
+             </ul> 
+        </div> 
+      </transition> 
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"> <img src="images/logo.png"></a>
+       </div>
+       <div class="tel2"><img src="images/tel5.png"></div>
+    </div>
+       <main>
+        <component v-bind:is="currentBanner" />
+        
+      </main>
+      <main2>
+        
+        <div class="gallerytop">
+          <p>お知らせ</p>
+          <hr>
+          <p　class="newsday">2020.09</p>
+          <p class="newstitle">◆ホームページ更新</p>
+          <p>2020年9月から～～</p>
+          <hr>
+          <p　class="newsday">2020.09</p>
+          <p class="newstitle">◆ホームページ更新</p>
+          <p>2020年9月から～～</p>
+          <hr>
+          <p　class="newsday">2020.09</p>
+          <p class="newstitle">◆ホームページ更新</p>
+          <p>2020年9月から～～</p> 
+        </div>
+        <img class = "top2" src="images/kanban.jpg">
+
+        <div class="gallerytop">
+          <p>料理屋　松について</p>
+          <hr>
+          <p　class="newsday">2020.09</p>
+          <p class="newstitle">◆ホームページ更新</p>
+          <p>2020年9月から～～</p>
+          
+        </div>
+
+        <img class = "top2" src="images/kanban.jpg">
+
+      </main2>
+      
+       <footer>
+         <p>&copy;Copyright 料理屋　松.ALL right reserved.</P>
+     　</footer>
+   
+     </div>
+        
+      
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

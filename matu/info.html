@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang = "ja">
+ <head>
+ <meta charset ="UTF-8">
+ <title>窓屋</title>
+ <meta name = "viewport" content = "width = device-width,intial-scale = 1">
+ <link rel="stylesheet" href = "css/styless.css">
+ <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+         <div class="hamburger_btn" v-on:click='ActiveBtn=!ActiveBtn'> 
+           <span class="line line_01" v-bind:class="{'btn_line01':ActiveBtn}"></span> 
+           <span class="line line_02" v-bind:class="{'btn_line02':ActiveBtn}"></span> 
+           <span class="line line_03" v-bind:class="{'btn_line03':ActiveBtn}"></span>
+
+        </div> 
+       <!--サイドメニュー--> 
+       <transition name="menu"> 
+         <div class="menu" v-show="ActiveBtn"> 
+             <ul> 
+                <li><a href="index.html">トップページ</a></li> 
+                <li><a href="about.html">古美術窓屋について</a></li> 
+                <li><a href="kaitori.html">買取・査定</a></li> 
+                <li><a href="info.html">お問合せ</a></li> 
+               
+                
+             </ul> 
+        </div> 
+      </transition> 
+    <div class="header">
+      <div class="logo">
+        <a href="index.html"> <img src="images/logo.jpg"></a>
+       </div>
+       <div class="tel2"><img src="images/tel5.png"></div>
+    </div>
+       <main>
+        <!-- <img class = "top1" src="images/top.jpg"> -->
+        <img class = "top2" src="images/tophen.jpg">
+         
+       </main>
+       <footer>
+        <h2>古美術 窓屋</h2>
+        <div class="f">
+          <p>有限会社　オカモト</p>
+          <p>春日本店　〒761-0101 香川県高松市春日町1709-8</p>
+          <p>兵庫町店　〒761-0024 香川県高松市兵庫町1-3</p>
+          <p>京都新店　〒761-0101 京都府高松市春日町1709-8</p>
+         </div>
+         <br>
+         <p>&copy;Copyright 古美術　窓屋.ALL right reserved.</P>
+     　</footer>
+   
+     </div>
+        
+      
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
