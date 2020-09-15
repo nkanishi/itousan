@@ -1,0 +1,123 @@
+body{
+    font-size:16px;
+    font-family: Verdana,  sans-serif;
+    margin:0 3%;
+}
+
+.container{
+    width: 300px;
+    margin: 0 auto;
+}
+
+#app h1{
+  font-size:16px;
+  border-bottom: 1px solid #ddd;  
+  padding: 16px 0;
+}
+
+#app li{
+    line-height:1.5;
+}
+
+#app input[type="text"]{
+    padding:2px;
+}
+
+.command{
+    font-size:12px;
+    corners:pointer;
+    color:#08c;
+}
+
+#app ul{
+    padding:0;
+    list-style:none;
+}
+
+#app li > span.done{
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.info{
+    color: #bbb;
+    font-size:12px;
+    font: normal;
+}
+
+#app h1 > button{
+    float:right;
+}
+
+
+/* トップ画面 */
+h1{
+    border-bottom: 1px solid black;
+    margin-bottom: 2%;
+   
+}
+.menu{
+    display: flex;
+ 
+}
+
+.menubtn1 {
+    margin: 2% 2%;
+    font-size:20px;
+    border: 1px solid rgb(31, 29, 29);
+    text-decoration: none;
+    background-color: yellow;
+    cursor: pointer;
+}
+.menubtn2 {
+    margin: 2% 2%;
+    font-size:20px;
+    border: 1px solid rgb(31, 29, 29);
+    text-decoration: none;
+    background-color: yellow;
+    cursor: pointer;
+}
+.menubtn3 {
+    margin: 2% 2%;
+    font-size:20px;
+    border: 1px solid rgb(31, 29, 29);
+    text-decoration: none;
+    background-color: yellow;
+    cursor: pointer;
+}
+.menubtn4 {
+    margin: 2% 2%;
+    font-size:20px;
+    background-color: skyblue;
+    border: 1px solid rgb(31, 29, 29);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table{
+    border: 1px solid rgb(31, 29, 29);
+
+}
+table tr{
+    border: 1px solid rgb(31, 29, 29);
+  
+}
+table td{
+    border: 1px solid rgb(31, 29, 29);
+    padding:6px;
+}
+
+/* ご利用者ページ */
+.riyosha{
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+
+
+
+/* フッター */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
